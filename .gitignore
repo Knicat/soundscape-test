@@ -1,2 +1,4 @@
 /vendor/
 /app/vendor/
+/app/web/bower_components/
+/app/lean.sql
