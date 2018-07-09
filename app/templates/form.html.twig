@@ -1,0 +1,215 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <h1>Formulario 1</h1>
+    <hr>
+    {{ form_start(form, {'attr':{'novalidate':'novalidate'}}) }}
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.agrado_sonoro) }}
+                {{ form_errors(form.agrado_sonoro) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Desagradable</td>
+                        <td>{{ form_widget(form.agrado_sonoro) }}</td>
+                        <td>Agradable</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.animacion) }}
+                {{ form_errors(form.animacion) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Sin vida</td>
+                        <td>{{ form_widget(form.animacion) }}</td>
+                        <td>Animado</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.intensidad_sonora_global) }}
+                {{ form_errors(form.intensidad_sonora_global) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Débil</td>
+                        <td>{{ form_widget(form.intensidad_sonora_global) }}</td>
+                        <td>Fuerte</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.intensidad_sonora_de_las_motocicletas) }}
+                {{ form_errors(form.intensidad_sonora_de_las_motocicletas) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Débil</td>
+                        <td>{{ form_widget(form.intensidad_sonora_de_las_motocicletas) }}</td>
+                        <td>Fuerte</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.intensidad_sonora_de_los_vehiculos_livianos) }}
+                {{ form_errors(form.intensidad_sonora_de_los_vehiculos_livianos) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Débil</td>
+                        <td>{{ form_widget(form.intensidad_sonora_de_los_vehiculos_livianos) }}</td>
+                        <td>Fuerte</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.intensidad_sonora_de_los_vehiculos_pesados) }}
+                {{ form_errors(form.intensidad_sonora_de_los_vehiculos_pesados) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Débil</td>
+                        <td>{{ form_widget(form.intensidad_sonora_de_los_vehiculos_pesados) }}</td>
+                        <td>Fuerte</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.tiempo_de_presencia_de_los_vehiculos) }}
+                {{ form_errors(form.tiempo_de_presencia_de_los_vehiculos) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Muy poco presente</td>
+                        <td>{{ form_widget(form.tiempo_de_presencia_de_los_vehiculos) }}</td>
+                        <td>Siempre presente</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.tiempo_de_presencia_de_las_voces) }}
+                {{ form_errors(form.tiempo_de_presencia_de_las_voces) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Muy poco presente</td>
+                        <td>{{ form_widget(form.tiempo_de_presencia_de_las_voces) }}</td>
+                        <td>Siempre presente</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.tiempo_de_presencia_de_los_pasos) }}
+                {{ form_errors(form.tiempo_de_presencia_de_los_pasos) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Muy poco presente</td>
+                        <td>{{ form_widget(form.tiempo_de_presencia_de_los_pasos) }}</td>
+                        <td>Siempre presente</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.tiempo_de_presencia_de_los_pajaros) }}
+                {{ form_errors(form.tiempo_de_presencia_de_los_pajaros) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Muy poco presente</td>
+                        <td>{{ form_widget(form.tiempo_de_presencia_de_los_pajaros) }}</td>
+                        <td>Siempre presente</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.agrado_visual) }}
+                {{ form_errors(form.agrado_visual) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Desagradable</td>
+                        <td>{{ form_widget(form.agrado_visual) }}</td>
+                        <td>Agradable</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="formulario_row">
+        <tr>
+            <td>
+                {{ form_label(form.familiaridad_del_sonido) }}
+                {{ form_errors(form.familiaridad_del_sonido) }}
+            </td>
+            <td>
+                <table class="formulario_row">
+                    <tr>
+                        <td>Sorprendente</td>
+                        <td>{{ form_widget(form.familiaridad_del_sonido) }}</td>
+                        <td>Familiar</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    {{ form_row(form.submit) }}
+    {{ form_end(form) }}
+{% endblock %}

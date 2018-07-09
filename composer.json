@@ -1,0 +1,6 @@
+{
+    "require": {
+        "doctrine/dbal": "^2.5",
+        "symfony/console": "^3.1"
+    }
+}

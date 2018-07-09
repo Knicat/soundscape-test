@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "authors": [
+    "Agustin Houlgrave <a.houlgrave@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootswatch": "^3.3.6+2"
+  }
+}
